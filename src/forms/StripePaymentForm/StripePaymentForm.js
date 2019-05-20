@@ -143,7 +143,7 @@ class StripePaymentForm extends Component {
     });
   }
   handleSubmit(values) {
-    const { onSubmit, handleCardPaymentInProgress } = this.props;
+    const { onSubmit, handleCardPaymentInProgress, formId } = this.props;
     const { initialMessage } = values;
 
     if (handleCardPaymentInProgress || !this.state.cardValueValid) {
@@ -155,7 +155,10 @@ class StripePaymentForm extends Component {
       message: initialMessage ? initialMessage.trim() : null,
       stripe: this.stripe,
       card: this.card,
+      formId,
+      formValues: values,
     };
+
     onSubmit(params);
   }
 
