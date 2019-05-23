@@ -10,7 +10,7 @@ import { metaTagProps } from '../../util/seo';
 import { canonicalRoutePath } from '../../util/routes';
 import { CookieConsent } from '../../components';
 
-import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
+import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg'; //TODO
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './Page.css';
 
@@ -28,14 +28,14 @@ const twitterPageURL = siteTwitterHandle => {
 };
 
 class PageComponent extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     // Keeping scrollPosition out of state reduces rendering cycles (and no bad states rendered)
     this.scrollPosition = 0;
     this.contentDiv = null;
   }
 
-  componentDidMount() {
+  componentDidMount () {
     // By default a dropped file is loaded in the browser window as a
     // file URL. We want to prevent this since it might loose a lot of
     // data the user has typed but not yet saved. Preventing requires
@@ -44,12 +44,12 @@ class PageComponent extends Component {
     document.addEventListener('drop', preventDefault);
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     document.removeEventListener('dragover', preventDefault);
     document.removeEventListener('drop', preventDefault);
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     const scrollingDisabled = nextProps.scrollingDisabled;
     const scrollingDisabledHasChanged = scrollingDisabled !== this.props.scrollingDisabled;
 
@@ -59,7 +59,7 @@ class PageComponent extends Component {
     }
   }
 
-  render() {
+  render () {
     const {
       className,
       rootClassName,

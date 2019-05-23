@@ -2,44 +2,66 @@
  * Marketplace specific configuration.
  */
 
+export const allowedVehicleTypes = [ //TODO hook up the checkboxes
+  { key: 'small', label: 'Small: Trucks/campervans' },
+  { key: 'mid', label: 'Mid: Class B and C' },
+  { key: 'large', label: 'Large: Class A/busses' },
+  { key: 'semi', label: 'Semi and stock trailers' },
+]
+
+export const allowedCampingModes = [ //TODO hook up the checkboxes
+  { key: 'in_vehicle_RV', label: 'In vehicle/RV' },
+  { key: 'yard_tent', label: 'Yard/tent' }
+]
+
 export const amenities = [
   {
-    key: 'towels',
-    label: 'Towels',
+    key: 'wifi',
+    label: 'WiFi',
   },
   {
     key: 'bathroom',
     label: 'Bathroom',
   },
   {
-    key: 'swimming_pool',
-    label: 'Swimming pool',
+    key: 'electric',
+    label: 'Electric',
   },
   {
-    key: 'own_drinks',
-    label: 'Own drinks allowed',
+    key: 'hot_tub',
+    label: 'Hot Tub',
   },
   {
-    key: 'jacuzzi',
-    label: 'Jacuzzi',
+    key: 'water',
+    label: 'Water',
   },
   {
-    key: 'audiovisual_entertainment',
-    label: 'Audiovisual entertainment',
+    key: 'trash',
+    label: 'Trash',
   },
   {
-    key: 'barbeque',
-    label: 'Barbeque',
+    key: 'wastewater_dump',
+    label: 'Wastewater Dump',
   },
   {
-    key: 'own_food_allowed',
-    label: 'Own food allowed',
+    key: 'horse_or_stock_pen',
+    label: 'Horse or stock pen',
   },
 ];
 
+export const campRules = [ //TODO hook up the checkboxes
+  { key: 'pets_allowed', label: 'Pets allowed?' },
+  { key: 'stock_horses_allowed', label: 'Stock/horses allowed?' },
+  { key: '24_7_quiet', label: '24/7 quiet' },
+  { key: 'firearmes_allowed', label: 'Firearms allowed?' },
+  { key: 'generators_allowed', label: 'Generators allowed?' },
+  { key: 'campfires_allowed', label: 'Campfires allowed?' },
+]
+
+
 export const categories = [
   { key: 'smoke', label: 'Smoke' },
-  { key: 'electric', label: 'Electric' },
+  { key: 'electric', label: 'Electric' }, //TODO
   { key: 'wood', label: 'Wood' },
   { key: 'other', label: 'Other' },
 ];

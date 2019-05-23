@@ -6,7 +6,7 @@ import css from './PrivacyPolicy.css';
 
 const PrivacyPolicy = props => {
   const { rootClassName, className } = props;
-  const classes = classNames(rootClassName || css.root, className);
+  const classes = classNames(rootClassName || css.root, className);  // TODO
 
   // prettier-ignore
   return (

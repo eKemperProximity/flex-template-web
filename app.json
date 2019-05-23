@@ -1,8 +1,8 @@
 {
-  "name": "Sharetribe Flex Template Demo",
-  "description": "Sharetribe Flex Template Demo - Saunatime!",
+  "name": "Camp Bueno Marketplace",
+  "description": "Camp Bueno Marketplace",
   "keywords": [
-    "node", 
+    "node",
     "react"
   ],
   "repository": "https://github.com/sharetribe/flex-template-web/",

@@ -16,7 +16,7 @@ import image from './about-us-1056.jpg';
 
 const AboutPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
-  const siteTwitterPage = twitterPageURL(siteTwitterHandle);
+  const siteTwitterPage = twitterPageURL(siteTwitterHandle);  // TODO
 
   // prettier-ignore
   return (
@@ -25,7 +25,7 @@ const AboutPage = () => {
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Saunatime',
+        description: 'About Camp Bueno',
         name: 'About page',
       }}
     >
