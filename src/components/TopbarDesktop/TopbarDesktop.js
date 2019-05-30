@@ -162,6 +162,7 @@ const TopbarDesktop = props => {
   );
 };
 
+
 const { bool, func, object, number, string } = PropTypes;
 
 TopbarDesktop.defaultProps = {
