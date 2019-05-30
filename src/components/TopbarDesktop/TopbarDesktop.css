@@ -74,7 +74,9 @@
 
 .logo {
   /* If height is increased, change link paddings accordingly */
-  height: 27px;
+  height: 50px;
+  position: relative;
+  top: -10px;
 
   /* Good aspect ratio should be less than 160/27 (width/height) */
   /* NOTE: extremely wide logos, need special handling. */
@@ -99,7 +101,7 @@
 }
 
 .search {
-  @apply --marketplaceH4FontStyles;
+  @apply --marketplaceH2FontStyles;
   @apply --TopbarDesktop_label;
   color: var(--matterColor);
 }
@@ -135,8 +137,33 @@
   }
 }
 
+.browseListingLink {
+  @apply --TopbarDesktop_linkHover;
+  @apply --marketplaceH4FontStyles;
+
+  flex-shrink: 0;
+  height: 100%;
+  padding: 0 12px 0 12px;
+  color: var(--marketplaceColor);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:hover {
+    color: var(--marketplaceColorDark);
+  }
+
+  @media (--viewportMedium) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .createListing {
   @apply --TopbarDesktop_label;
+}
+.browseListings {
+  @apply --TopbarDesktop_label;
+  position: relative;
 }
 
 /* Inbox */

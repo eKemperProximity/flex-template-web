@@ -5,9 +5,12 @@ import { Form as FinalForm } from 'react-final-form';
 import { intlShape, injectIntl, FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import { propTypes } from '../../util/types';
-import { Form, Button, FieldTextInput } from '../../components';
+import { Form, Button, FieldTextInput, FieldCheckboxGroup } from '../../components';
+import config from '../../config';
 
 import css from './EditListingPoliciesForm.css';
+
+const RULES_NAME = 'Camp Rules';
 
 export const EditListingPoliciesFormComponent = props => (
   <FinalForm
@@ -62,6 +65,13 @@ export const EditListingPoliciesFormComponent = props => (
             type="textarea"
             label={rulesLabelMessage}
             placeholder={rulesPlaceholderMessage}
+          />
+
+          <FieldCheckboxGroup
+            className={css.features}
+            id={RULES_NAME}
+            name={RULES_NAME}
+            options={config.custom.campRules}
           />
 
           <Button

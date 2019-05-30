@@ -135,11 +135,25 @@ const TopbarDesktop = props => {
         />
       </NamedLink>
       {search}
-      <NamedLink className={css.createListingLink} name="NewListingPage">
+      {/* <NamedLink className={css.createListingLink} name="NewListingPage">
         <span className={css.createListing}>
           <FormattedMessage id="TopbarDesktop.createListing" />
         </span>
+      </NamedLink> */}
+
+      <NamedLink
+        name="SearchPage"
+        to={{
+          search:
+            's?address=Finland&bounds=70.0922932%2C31.5870999%2C59.693623%2C20.456500199999937',
+        }}
+        className={css.browseListingLink}
+      >
+        <span className={css.browseListings}>
+          <FormattedMessage id="TopbarDesktop.browseListings" />
+        </span>
       </NamedLink>
+
       {inboxLink}
       {profileMenu}
       {signupLink}

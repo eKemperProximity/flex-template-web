@@ -82,6 +82,10 @@
   }
 }
 
+.heroTitleAccent {
+  color: rgb(222, 201, 20);
+}
+
 .heroSubTitle {
   @apply --marketplaceBodyFontStyles;
 

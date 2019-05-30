@@ -15,12 +15,23 @@ const SectionHero = props => {
     <div className={classes}>
       <div className={css.heroContent}>
         <h1 className={css.heroMainTitle}>
-          <FormattedMessage id="SectionHero.title" />
+          PRIVATE <span className={css.heroTitleAccent}>RV</span> PARKING IN GREAT LOCATIONS.
+          {/* <FormattedMessage id="SectionHero.title" /> */}
         </h1>
-        <h2 className={css.heroSubTitle}>
+
+        {/* <h2 className={css.heroSubTitle}>
           <FormattedMessage id="SectionHero.subTitle" />
-        </h2>
+        </h2> */}
+
         <NamedLink
+          className={css.createListingLink}
+          name="NewListingPage">
+          <span className={css.heroButton}>
+            <FormattedMessage id="TopbarDesktop.createListing" />
+          </span>
+        </NamedLink>
+
+        {/* <NamedLink
           name="SearchPage"
           to={{
             search:
@@ -29,7 +40,8 @@ const SectionHero = props => {
           className={css.heroButton}
         >
           <FormattedMessage id="SectionHero.browseButton" />
-        </NamedLink>
+        </NamedLink> */}
+
       </div>
     </div>
   );
