@@ -2,6 +2,12 @@
  * Marketplace specific configuration.
  */
 
+export const serviceLevel = [
+  { key: 'basicParkingOnly', label: 'Basic, parking only' },
+  { key: 'parkingAndSomeConnections', label: 'Parking and some connections' },
+  { key: 'fullServiceCampSite', label: 'Full service campsite' }
+];
+
 export const allowedVehicleTypes = [ //TODO hook up the checkboxes
   { key: 'small', label: 'Small: Trucks/campervans' },
   { key: 'mid', label: 'Mid: Class B and C' },
@@ -49,7 +55,7 @@ export const amenities = [
   },
 ];
 
-export const campRules = [ //TODO hook up the checkboxes
+export const campRules = [
   { key: 'pets_allowed', label: 'Pets allowed?' },
   { key: 'stock_horses_allowed', label: 'Stock/horses allowed?' },
   { key: '24_7_quiet', label: '24/7 quiet' },
