@@ -8,6 +8,16 @@ export const serviceLevel = [
   { key: 'fullServiceCampSite', label: 'Full service campsite' }
 ];
 
+export const seasonalRestrictions = [
+  { key: 'openAllYear', label: 'Open all year' },
+  { key: 'seasonalClosures', label: 'Seasonal closures' },
+];
+
+export const accessAndParking = [
+  { key: 'pavedRoad', label: 'Paved road' },
+  { key: 'levelParking', label: 'Level parking' },
+];
+
 export const allowedVehicleTypes = [ //TODO hook up the checkboxes
   { key: 'small', label: 'Small: Trucks/campervans' },
   { key: 'mid', label: 'Mid: Class B and C' },
@@ -16,7 +26,7 @@ export const allowedVehicleTypes = [ //TODO hook up the checkboxes
 ]
 
 export const allowedCampingModes = [ //TODO hook up the checkboxes
-  { key: 'in_vehicle_RV', label: 'In vehicle/RV' },
+  { key: 'in_vehicle_rv', label: 'In vehicle/RV' },
   { key: 'yard_tent', label: 'Yard/tent' }
 ]
 

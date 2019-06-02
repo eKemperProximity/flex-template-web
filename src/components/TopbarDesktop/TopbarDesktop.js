@@ -125,6 +125,11 @@ const TopbarDesktop = props => {
     </NamedLink>
   );
 
+  const minLat = 3.12;
+  const maxLat = 66.20;
+  const minLon = -129.85;
+  const maxLon = -67.85;
+
   return (
     <nav className={classes}>
       <NamedLink className={css.logoLink} name="LandingPage">
@@ -146,7 +151,7 @@ const TopbarDesktop = props => {
         name="SearchPage"
         to={{
           search:
-            's?address=Finland&bounds=70.0922932%2C31.5870999%2C59.693623%2C20.456500199999937',
+            `s?address=Finland&bounds=${maxLat}%2C${maxLon}%2C${minLat}%2C${minLon}`,
         }}
         className={css.browseListingLink}
       >
