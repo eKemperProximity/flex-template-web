@@ -151,7 +151,7 @@ const TopbarDesktop = props => {
         name="SearchPage"
         to={{
           search:
-            `s?address=Finland&bounds=${maxLat}%2C${maxLon}%2C${minLat}%2C${minLon}`,
+            `s?address=UnitedStates&bounds=${maxLat}%2C${maxLon}%2C${minLat}%2C${minLon}`,
         }}
         className={css.browseListingLink}
       >
